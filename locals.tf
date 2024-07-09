@@ -54,7 +54,7 @@ locals {
         {
           category = "terraform"
           key      = "domain"
-          value    = "<your-top-level-domain>"
+          value    = "devaf.dev"
         },
         {
           category = "terraform"
@@ -64,7 +64,7 @@ locals {
         {
           category = "terraform"
           key      = "name"
-          value    = "eci-<your-name>"
+          value    = "eci-allanferencz"
         },
         {
           category = "terraform"
