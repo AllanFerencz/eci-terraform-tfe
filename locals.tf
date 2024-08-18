@@ -17,7 +17,6 @@ locals {
       project_id          = module.project["eci-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/eci-terraform-github"
     }
-
     "eci-aws-network" = {
       description         = "Automation for AWS network resources."
       execution_mode      = "remote"
@@ -72,6 +71,12 @@ locals {
           value    = "eci"
         },
       ]
+    }
+    "af-serverless-terraform" = {
+      description         = "Automation Workspace for Serverless Terraform Resources"
+      execution_mode      = "remote"
+      project_id          = module.project["eci-project"].id
+      vcs_repo_identifier = "${var.github_organization_name}/af-serverless-terraform"
     }
   }
 }
